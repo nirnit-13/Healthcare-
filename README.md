@@ -28,6 +28,22 @@ If you need assistance or have any issues:
 - **Email:** nirnitroy@gmail.com || anindita.dutta2005@gmail.com  
 - **Report Issues:** [GitHub Issues](https://github.com/nirnit-13) || (https://github.com/anindita-19)   
 
+## Installation and Setup
+Prerequisites
+- Python 3.x installed
+- Flask installed (pip install flask)
+- Firebase credentials configured
+
+Steps to Run the Project
+1. Clone the repository:
+  git clone https://github.com/nirnit-13/Healthcare-.git
+  cd Healthcare-
+2. Install dependencies:
+  pip install -r requirements.txt
+3. Start the Flask Server
+  python app.py
+4. Open http://127.0.0.1:5000 in your browser.
+
 ## Contributors & Maintenance  
 This project is developed and maintained by:  
 - **Nirnit Roy** - Developer & Maintainer  
