@@ -26,7 +26,7 @@ With increasing healthcare demands, timely diagnosis and easy appointment bookin
 ## Where to Get Help  
 If you need assistance or have any issues:  
 - *Email:* nirnitroy@gmail.com || anindita.dutta2005@gmail.com  
-- *Report Issues:* [GitHub Issues](https://github.com/nirnit-13) || (https://github.com/anindita-19)   
+- *Report Issues:* [GitHub Issues] (https://github.com/nirnit-13) || (https://github.com/anindita-19)   
 
 ## Installation and Setup
 Prerequisites
