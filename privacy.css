@@ -1,0 +1,92 @@
+/* ✅ General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: url('https://media.istockphoto.com/id/2099357117/vector/heart-pulse-and-heartbeat-heartbeat-lone-cardiogram-beautiful-healthcare-medical-background.jpg?s=612x612&w=0&k=20&c=5agokqkO2Ls-JGCXC5eYl8mH_EO1ZnihZc-pEYtVBOI=');
+    background-size: cover;
+    margin: 0;
+}
+
+/* ✅ Navbar */
+.navbar {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 15px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: white !important;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffd700 !important;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* ✅ Privacy Policy Container */
+.privacy-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.privacy-container h2 {
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.privacy-container h3 {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    color: #333;
+}
+
+.privacy-container p,
+.privacy-container ul {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.privacy-container a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.privacy-container a:hover {
+    text-decoration: underline;
+}
+
+/* ✅ Checkbox */
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+    .privacy-container {
+        width: 90%;
+        padding: 20px;
+    }
+}

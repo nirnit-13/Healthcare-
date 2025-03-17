@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Symptoms Checker | Healthcare Assistant</title>
+
+    <!-- ✅ Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- ✅ Custom CSS -->
+    <link rel="stylesheet" href="symptoms_bot_style.css">
+</head>
+<body>
+
+    <!-- ✅ Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">AI Healthcare Assistant</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#" data-nav="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-nav="application_form.html">Book Appointment</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-nav="health_tips.html">Health Tips</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-nav="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-nav="profile.html">My Profile</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ✅ Fullscreen Chat Window -->
+    <div class="chat-container">
+        <div class="chat-box" id="chatBox">
+            <div class="chat-message bot-message">👋 Hello! Describe your symptoms, and I'll assist you.</div>
+        </div>
+
+        <!-- ✅ Chat Input -->
+        <div class="chat-input">
+            <input type="text" id="userInput" class="form-control" placeholder="Type your symptoms...">
+            <button class="btn btn-primary" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <!-- ✅ JavaScript -->
+    <script>
+        function sendMessage() {
+            var userInput = document.getElementById("userInput").value;
+            if (userInput.trim() === "") return;
+
+            var chatBox = document.getElementById("chatBox");
+
+            // User message
+            var userMessage = document.createElement("div");
+            userMessage.className = "chat-message user-message";
+            userMessage.innerText = userInput;
+            chatBox.appendChild(userMessage);
+
+            // Simulate AI response
+            setTimeout(() => {
+                var botMessage = document.createElement("div");
+                botMessage.className = "chat-message bot-message";
+                botMessage.innerText = "🤖 Processing your symptoms... Please wait.";
+                chatBox.appendChild(botMessage);
+
+                chatBox.scrollTop = chatBox.scrollHeight; // Scroll to latest message
+            }, 1000);
+
+            document.getElementById("userInput").value = ""; // Clear input
+            chatBox.scrollTop = chatBox.scrollHeight; // Auto-scroll down
+        }
+    </script>
+
+    <!-- ✅ Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="script.js" defer></script>
+
+</body>
+</html>

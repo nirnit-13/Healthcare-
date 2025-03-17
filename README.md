@@ -28,6 +28,7 @@ If you need assistance or have any issues:
 - **Email:** nirnitroy@gmail.com || anindita.dutta2005@gmail.com  
 - **Report Issues:** [GitHub Issues](https://github.com/nirnit-13) || (https://github.com/anindita-19)   
 
+<<<<<<< HEAD
 ## Installation and Setup
 Prerequisites
 - Python 3.x installed
@@ -44,9 +45,15 @@ Steps to Run the Project
   python app.py
 4. Open http://127.0.0.1:5000 in your browser.
 
+=======
+>>>>>>> 845d6d2 (adding the healthcare project)
 ## Contributors & Maintenance  
 This project is developed and maintained by:  
 - **Nirnit Roy** - Developer & Maintainer  
 - **Anindita Dutta** - Developer & Maintenance  
 
+<<<<<<< HEAD
 ### If you find this project helpful, consider giving it a **star**!
+=======
+### If you find this project helpful, consider giving it a **star**!
+>>>>>>> 845d6d2 (adding the healthcare project)

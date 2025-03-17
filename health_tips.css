@@ -1,0 +1,104 @@
+/* ✅ General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: url('https://media.istockphoto.com/id/2099357117/vector/heart-pulse-and-heartbeat-heartbeat-lone-cardiogram-beautiful-healthcare-medical-background.jpg?s=612x612&w=0&k=20&c=5agokqkO2Ls-JGCXC5eYl8mH_EO1ZnihZc-pEYtVBOI=');
+    background-size: cover;
+    margin: 0;
+}
+
+/* ✅ Navbar Styles */
+.navbar {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+}
+
+/* Navbar Brand (Logo + Text) */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-item {
+    margin-left: 15px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: white !important;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffd700 !important; /* Gold color on hover */
+}
+
+/* Navbar Toggler */
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* Responsive Navbar */
+@media (max-width: 992px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 10px 0;
+    }
+}
+
+
+/* ✅ Healthcare Tips Section */
+.healthcare-tips {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.healthcare-tips h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+/* ✅ Tip Boxes */
+.tip-box {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.tip-box h4 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.tip-box ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.tip-box ul li {
+    margin-bottom: 5px;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+    .tip-box {
+        text-align: center;
+    }
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Healthcare Assistant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- ✅ Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                 AI Healthcare Assistant
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#" data-nav="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-nav="login_page.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#symptom-checker" onclick="redirectIfNotLoggedIn('symptoms_bot.html')">Check Symptoms</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#book-appointment" onclick="redirectIfNotLoggedIn('application_form.html')">Book Appointment</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-nav="health_tips.html">Health Tips</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-nav="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#my-profile" onclick="redirectIfNotLoggedIn('profile.html')">My Profile</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- ✅ Hero Section with Background Image -->
+    <header class="hero-section text-center text-white d-flex align-items-center">
+        <div class="overlay"></div> <!-- Dark Overlay -->
+        <div class="container">
+            <h1>AI-Powered Healthcare Assistant</h1>
+            <p class="lead">Instant symptom analysis & easy doctor appointments.</p>
+            <a href="#symptom-checker" class="btn btn-light btn-lg" onclick="redirectIfNotLoggedIn('symptoms_bot.html')">Check Symptoms Now</a>
+        </div>
+    </header>
+
+    <!-- ✅ How It Works -->
+    <section class="container mt-5 text-center">
+        <h2>How It Works</h2>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <h3>Step 1</h3>
+                <p>Enter your symptoms in our AI checker.</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Step 2</h3>
+                <p>Get instant health advice based on AI analysis.</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Step 3</h3>
+                <p>Book a doctor if necessary for further consultation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ✅ Features Section -->
+    <section class="features-section text-center text-white mt-5">
+        <div class="container">
+            <h2>Why Choose Us?</h2>
+            <div class="row mt-4">
+                <div class="col-md-3">
+                    <h4>AI Symptom Checker</h4>
+                    <p>Instant health analysis using AI.</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Doctor Booking</h4>
+                    <p>Easy online appointment scheduling.</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>24/7 Access</h4>
+                    <p>Use anytime, from anywhere.</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Data Privacy</h4>
+                    <p>Secure and confidential health data.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ✅ Call to Action -->
+    <section class="container text-center mt-5">
+        <h2 class="text-success">Start Your Health Check Now!</h2>
+        <a href="#symptom-checker" class="btn btn-success btn-lg" onclick="redirectIfNotLoggedIn('symptoms_bot.html')">Use AI Symptom Checker</a>
+    </section>
+
+    <!-- ✅ JavaScript to Handle Redirection -->
+    <script>
+        function redirectIfNotLoggedIn(page) {
+            // Simulated login check (Replace this with actual authentication logic)
+            const isLoggedIn = sessionStorage.getItem("loggedIn"); 
+
+            if (!isLoggedIn) {
+                alert("Please log in to access this feature.");
+                window.location.href = "login_page.html"; // Redirect to login page
+            } else {
+                window.location.href = page; // Allow access to the page
+            }
+        }
+    </script>
+
+    <!-- ✅ Footer -->
+    <footer class="bg-dark text-white text-center p-3 mt-5" id="contact">
+        <p>© 2025 AI Healthcare Assistant | Contact: support@healthai.com</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="firebase.js"></script>
+    <script type="module" src="script.js" defer></script>
+
+</body>
+</html>
